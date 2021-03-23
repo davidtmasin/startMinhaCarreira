@@ -1,0 +1,52 @@
+/* *{
+    margin: 0 auto;
+} */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-header{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foto{
+    /* background: purple; */
+    display: flex;
+    
+    
+}
+
+.info-pessoais{
+    /* background: rgb(202, 114, 114); */
+}
+
+.container-main{
+    
+    /* background: yellowgreen; */
+    /* height: 20vw;
+    display: flex; */
+   
+    
+}
+
+ .column-right{
+    /* display: flex; */
+    background: rgb(199, 161, 124);
+    
+
+   
+}
+
+.column-left{
+    /* display: flex; */
+    background: rgb(223, 119, 15);
+  
+} 
+
+.container-footer{
+    background: lightcoral;
+}
