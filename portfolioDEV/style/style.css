@@ -1,3 +1,14 @@
+/* VARIÁVEIS */
+:root{
+    --LUZ: white;
+    --SEM-LUZ: black;
+    --COR-SUBTITULO: #636363;
+    --COR-DESCRICAO-PERFIL: #636363;
+    --PRIMARY-HEADER: #45dbfc;
+    --COR-RODAPE: #04133d;
+    --FONT-STANDARD: 'Open Sans', sans-serif;
+}
+
 
 /* ESTILOS GERAIS */
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -33,105 +44,202 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 
 /* BODY */
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--FONT-STANDARD);
 }
 
 
 /* HEADER */
 header{
-    background-color: #45dbfc;
+    background-color: var(--PRIMARY-HEADER);
     padding-top: 30px;
 }
+
 header .container{
-    background-color: white;
+    background-color: var(--LUZ);
 }
+
 header .linha{
     align-items: center;
 }
-header .coluna{}
+
+header .coluna{
+
+}
+
 header .coluna-esquerda{
     flex-basis: 30%;
 }
+
 header .coluna-direita{
     flex-basis: 70%;
 }
-header .coluna figure{}
+
+header .coluna figure{
+
+}
+
 header .coluna img{
     max-width: 250px;
     border-radius: 100%;
 }
+
 header .coluna h1{
     font-size: 1.5rem;
 }
+
 header .coluna p{
     font-size: 1rem;
-    color: #636363;
+    color: var(--COR-SUBTITULO);
 }
+
 header .coluna ul{
     margin: 16px 0 0;
 }
+
 header .coluna ul li{
     margin: 0 0 12px;
 }
+
 header .coluna ul li a{
     font-size: 1rem;
-    color: black;
+    color: var(--SEM-LUZ);
 }
 
 
 /* FOOTER */
-footer{}
-footer .container{}
-footer nav{}
-footer nav ul{}
-footer nav ul li{}
-footer nav ul li a{}
-footer nav .info-contato{}
-footer nav .info-contato li{}
-footer nav .info-contato li a{}
-footer nav .redes-sociais{}
-footer nav .redes-sociais li{}
-footer nav .redes-sociais li a{}
-footer nav .redes-sociais li a img{}
-footer nav .redes-sociais li a img p{}
+footer{
+    background-color: var(--COR-RODAPE);
+}
+
+footer .container{
+
+}
+
+footer nav{
+
+}
+
+footer nav ul{
+
+
+}
+
+footer nav ul li{
+
+}
+
+footer nav ul li a{
+    color: var(--LUZ);
+}
+
+footer nav .info-contato{
+   
+}
+
+footer nav .info-contato li{
+    margin: 0 0 15px;
+}
+
+footer nav .info-contato li a{
+
+}
+
+footer nav .redes-sociais{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 40%);
+    margin: 20px 0 50px;   
+    padding: 50px 0 0;
+}
+
+footer nav .redes-sociais li{
+    margin: 0 14px;
+    text-align: center;
+}
+
+footer nav .redes-sociais li a{
+    
+}
+
+footer nav .redes-sociais li a img{
+    width: 40px;
+    
+}
+
+footer nav .redes-sociais li a img p{
+
+}
 
 
 /* PÁGINA INICIAL */
-main{}
-main .container{}
-main .linha{}
-main .coluna{}
-main .coluna-esquerda{}
-main .coluna-direita{}
+main{
+
+}
+
+main .container{
+
+}
+
+main .linha{
+
+}
+
+main .coluna{
+
+}
+
+main .coluna-esquerda{
+
+}
+
+main .coluna-direita{
+
+}
+
 main .coluna section{
     border: 1px solid #d4e9ff;
     margin: 0 0 20px;
     padding: 20px;
     min-height: 187px;
 }
+
 main .coluna section h2{
     font-size: 1.3rem;
     margin: 0 0 15px;
 }
+
 main .coluna section p{
     font-size: 0.9rem;
-    color: #636363;
+    color: var(--COR-DESCRICAO-PERFIL);
     line-height: 1.5;
+    text-align: justify;
+    text-indent: 0.5em;
 }
-main .coluna section ul{}
+
+main .coluna section ul{
+
+}
+
 main .coluna section ul li{
     margin: 0 0 12px;
+    text-align: justify;
+    text-indent: 0.5em;
 }
+
 main .coluna section ul li h3{
     font-size: 1.1rem;
 }
+
 main .coluna section ul li strong{
     font-size: 0.9rem;
     font-weight: 500;
     margin: 5px 0 10px;
     display: inline-block;
 }
-main .coluna section ul li p{}
+
+main .coluna section ul li p{
+
+}
 
 
 /* EXTRAS */
