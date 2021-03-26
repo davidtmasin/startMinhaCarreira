@@ -11,179 +11,203 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">        
+
     </head>
     <body>
-        <!-- CABEÇALHO -->
-        <header>
-            <!-- ID é único, o CLASS pode ser utilizado para vários elementos -->
-            <div class="container">
+        <!-- Quando temos uma label com a propriedade for igual ao ID de um input, significa que este input está relacionado a esta label -->
+        
+        <input type="checkbox" name="darkMode" id="darkModeActive" class="darkModeActive">
+        <div class="dark-mode">
+            <!-- CABEÇALHO -->
+            <header>
+                <!-- ID é único, o CLASS pode ser utilizado para vários elementos -->
+                <div class="container">
 
-                <!-- CAIXA FOTO DE PERFIL -->
-                <div class="linha">
-
-                    <div class="coluna coluna-esquerda">
-                        <figure>
-                            <img src="./assets/images/davidtmasin.jpg" alt="David Teixeira de Masin">
-                            <figcaption class="hidden">David Teixeira de Masin</figcaption>
-                        </figure>
+                    <label for="darkModeActive">
+                        <span></span>
+                    </label>
+    
+                    <!-- CAIXA FOTO DE PERFIL -->
+                    <div class="linha">
+    
+                        <div class="coluna coluna-esquerda">
+                            <figure>
+                                <img src="./assets/images/davidtmasin.jpg" alt="David Teixeira de Masin">
+                                <figcaption class="hidden">David Teixeira de Masin</figcaption>
+                            </figure>
+                        </div>
+    
+                        <!-- INFORMAÇÕES PESSOAIS -->
+                        <div class="coluna coluna-direita">
+    
+                            <h1>David Teixeira de Masin</h1>
+                            <p>Programming Student and Test Analist</p>
+    
+                            <ul>
+                                <li>
+                                    <a href="mailto:davidteixeira.info@gmail.com">davidteixeira.info@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="tel:5585989647993">(85) 9 8964-7993</a>
+                                </li>
+                                <li>
+                                    <a href="https://goo.gl/maps/aqEH9WuQMGnCZcjz5" target="_blank">Rua Coelho Neto, 1000, apto 04, Álvaro Weyne, Fortaleza - Ceará</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <!-- INFORMAÇÕES PESSOAIS -->
-                    <div class="coluna coluna-direita">
-
-                        <h1>David Teixeira de Masin</h1>
-                        <p>Programming Student and Test Analist</p>
-
-                        <ul>
-                            <li>
-                                <a href="mailto:davidteixeira.info@gmail.com">davidteixeira.info@gmail.com</a>
-                            </li>
-                            <li>
-                                <a href="tel:5585986666666">(85) 9 8964-7993</a>
-                            </li>
-                            <li>
-                                <a href="https://goo.gl/maps/aqEH9WuQMGnCZcjz5" target="_blank">Rua Coelho Neto, 1000, apto 04, Álvaro Weyne, Fortaleza - Ceará</a>
-                            </li>
-                        </ul>
+    
+                </div>
+            </header>
+    
+            <!-- CONTEÚDO PRINCIPAL -->
+            <main>
+                
+                <div class="container">
+                
+                    <div class="linha">
+                        <!-- LADO ESQUERDO -->
+                        <!-- O foco do uso da div está sendo para criar duas colunas para distruibuir com as seções -->
+                        <div class="coluna coluna-esquerda">
+                            <!-- Seção sobre o perfil profissional -->
+                            <!-- Estamos usuando section para dividir os site em seções importantes -->
+                            <section>
+                                <span class="topo-direita"></span>
+                                <h2>Perfil Profissional</h2>
+                                <p>Busco por uma oportunidade na área de TI ou da educação na Informática. Possuo uma carga de conhecimento interessante na parte da manutenção de micros que foi adquirida durante estágio na Prefeitura de Fortaleza e lecionando em cursos de manutenção de computadores, além disso, tenho vivência em sala, onde ensinei conhecimento em diversas áreas da informática, tais como, design gráfico (CorelDraw e Photoshop), pacote office, criação de sites e jogos, marketing pessoal e profissional, entre outras áreas. </p>
+                                <br>
+                                <span class="baixo-esquerda"></span>
+                            </section>
+    
+                            <section>
+                                <span class="topo-direita"></span>
+                                <h2>Especialidades</h2>
+                                <ul>
+                                    <li>Treinamento</li>
+                                    <li>Suporte técnico</li>
+                                    <li>Design gráfico</li>
+                                    <li>Edição de vídeo</li>
+                                    <li>HTML + CSS + JS</li>
+                                    <li>React.JS</li>
+                                </ul>
+                                <br>
+                                <span class="baixo-esquerda"></span>
+                            </section>
+    
+                            <section>
+                                <span class="topo-direita"></span>
+                                <h2>Cursos</h2>
+                                <ul>
+                                    <li>Inglês, Centro de Línguas Estrangeiras do Ceará - CLEC, carga horária 400h/a;</li>
+                                    <li>Desenvolvimento de Sites, Instituto Federal do Rio Grande do Sul - IFRS. Módulos: HTML (40h/a), CSS (30h/a), JS (30h/a);</li>
+                                    <li>Tecnologia da Informação e Comunicação, SENAI-SP, carga horária de 14h/a;</li>
+                                    <li>Lógica de Programação, SENAI-SP, carga horária de 14h/a;</li>
+                                    <li>Angular 9 - Essencial, COD3R, duração de 13 horas.</li>
+                                </ul>
+                                <br>
+                                <span class="baixo-esquerda"></span>
+                            </section>
+    
+                        </div>
+                        <!-- LADO DIREITO -->
+                        <div class="coluna coluna-direita">
+                            <section>
+                                <span class="topo-direita"></span>
+                                <h2>Experiências</h2>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Analista de testes I
+                                        </h3>
+                                        <strong>
+                                            Techway Informática LTDA
+                                        </strong>
+                                        <p>Desde fevereiro de 2021</p>
+                                        <strong>Atividades: Atuar no processo de homologação nas demandas de software que atendeM às necessidades dos colaboradores da Hapvida.</strong>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            Técnico em Informática
+                                        </h3>
+                                        <strong>
+                                            Locktec Tecnologia Integrada LTDA
+                                        </strong>
+                                        <p>Janeiro de 2020 a Fevereiro de 2021</p>
+                                        <strong>Atividades: Acompanhamento e resolução dos chamados internos via GLPI - HELPDESK; Configurar equipamento para portaria remota tais como, mikrotik, interfone IP e DVR; Monitorar ativos de rede via Zabbix</strong>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            Instrutor de cursos
+                                        </h3>
+                                        <strong>
+                                            Cedaspy Professional School - CPS
+                                        </strong>
+                                        <p>Outubro de 2016 a Dezembro de 2020</p>
+                                        <strong>Atividades: Ministrar cursos,  treinamentos e palestras ofertados pela escola, tais como, Sistemas Operacionais, Office, Marketing, Empregabilidade, Design Gráfico e Sites.</strong>
+                                    </li>
+                                </ul>
+                                <span class="baixo-esquerda"></span>
+                            </section>
+                            
+                            <section>
+                                <span class="topo-direita"></span>
+                                <h2>Formação</h2>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Tecnologia em Telemática <strong>Fev.2010 a Nov.2013</strong>
+                                        </h3>
+                                        <p>IFCE - Campus Fortaleza</p>
+                                    </li>                                
+                                </ul>  
+                                <span class="baixo-esquerda"></span>                  
+                            </section>
+    
+                        </div>
                     </div>
                 </div>
+    
+            </main>
+    
+            <footer>
+                        <div class="container">
+                            <nav>
+                                <ul class="info-contato">
+                                    <li>
+                                        <a href="mailto:davidteixeira.info@gmail.com"><strong>E-mail: </strong>davidteixeira.info@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:5585989647993 "><strong>Telefone: </strong>(85) 9 8964-7993</a>
+                                    </li>
+                                    <li>
+                                        <a href="encurtador.com.br/gvxLY"><strong>Endereço: </strong>Rua Coelho Neto, 1000, apto 04, Álvaro Weyne, Fortaleza - Ceará</a>
+                                    </li>
+                                </ul>
+                            </nav>
+    
+                            <nav>
+                                <ul class="redes-sociais">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/davidteixeirademasin/">
+                                            <img src="./assets/images/linkedin.svg" alt="LinkedIN">
+                                            <p>LinkedIN</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/davidtmasin">
+                                            <img src="./assets/images/github-big-logo.svg" alt="GitHub">
+                                            <p>GitHub</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+    
+                        </div>
+            </footer>
 
-            </div>
-        </header>
+        </div>
 
-        <!-- CONTEÚDO PRINCIPAL -->
-        <main>
-            
-            <div class="container">
-            
-                <div class="linha">
-                    <!-- LADO ESQUERDO -->
-                    <!-- O foco do uso da div está sendo para criar duas colunas para distruibuir com as seções -->
-                    <div class="coluna coluna-esquerda">
-                        <!-- Seção sobre o perfil profissional -->
-                        <!-- Estamos usuando section para dividir os site em seções importantes -->
-                        <section>
-                            <h2>Perfil Profissional</h2>
-                            <p>Busco por uma oportunidade na área de TI ou da educação na Informática. Possuo uma carga de conhecimento interessante na parte da manutenção de micros que foi adquirida durante estágio na Prefeitura de Fortaleza e lecionando em cursos de manutenção de computadores, além disso, tenho vivência em sala, onde ensinei conhecimento em diversas áreas da informática, tais como, design gráfico (CorelDraw e Photoshop), pacote office, criação de sites e jogos, marketing pessoal e profissional, entre outras áreas. </p>
-                            <br>
-                        </section>
-
-                        <section>
-                            <h2>Especialidades</h2>
-                            <ul>
-                                <li>Treinamento</li>
-                                <li>Suporte técnico</li>
-                                <li>Design gráfico</li>
-                                <li>Edição de vídeo</li>
-                                <li>HTML + CSS + JS</li>
-                                <li>React.JS</li>
-                            </ul>
-                            <br>
-                        </section>
-
-                        <section>
-                            <h2>Cursos</h2>
-                            <ul>
-                                <li>Inglês, Centro de Línguas Estrangeiras do Ceará - CLEC, carga horária 400h/a;</li>
-                                <li>Desenvolvimento de Sites, Instituto Federal do Rio Grande do Sul - IFRS. Módulos: HTML (40h/a), CSS (30h/a), JS (30h/a);</li>
-                                <li>Tecnologia da Informação e Comunicação, SENAI-SP, carga horária de 14h/a;</li>
-                                <li>Lógica de Programação, SENAI-SP, carga horária de 14h/a;</li>
-                                <li>Angular 9 - Essencial, COD3R, duração de 13 horas.</li>
-                            </ul>
-                            <br>
-                        </section>
-
-                    </div>
-                    <!-- LADO DIREITO -->
-                    <div class="coluna coluna-direita">
-                        <section>
-                            <h2>Experiências</h2>
-                            <ul>
-                                <li>
-                                    <h3>
-                                        Analista de testes I
-                                    </h3>
-                                    <strong>
-                                        Techway Informática LTDA
-                                    </strong>
-                                    <p>Desde fevereiro de 2021</p>
-                                    <strong>Atividades: Atuar no processo de homologação nas demandas de software que atendeM às necessidades dos colaboradores da Hapvida.</strong>
-                                </li>
-                                <li>
-                                    <h3>
-                                        Técnico em Informática
-                                    </h3>
-                                    <strong>
-                                        Locktec Tecnologia Integrada LTDA
-                                    </strong>
-                                    <p>Janeiro de 2020 a Fevereiro de 2021</p>
-                                    <strong>Atividades: Acompanhamento e resolução dos chamados internos via GLPI - HELPDESK; Configurar equipamento para portaria remota tais como, mikrotik, interfone IP e DVR; Monitorar ativos de rede via Zabbix</strong>
-                                </li>
-                                <li>
-                                    <h3>
-                                        Instrutor de cursos
-                                    </h3>
-                                    <strong>
-                                        Cedaspy Professional School - CPS
-                                    </strong>
-                                    <p>Outubro de 2016 a Dezembro de 2020</p>
-                                    <strong>Atividades: Ministrar cursos,  treinamentos e palestras ofertados pela escola, tais como, Sistemas Operacionais, Office, Marketing, Empregabilidade, Design Gráfico e Sites.</strong>
-                                </li>
-                            </ul>
-                        </section>
-                        
-                        <section>
-                            <h2>Formação</h2>
-                            <ul>
-                                <li>
-                                    <h3>
-                                        Tecnologia em Telemática <strong>Fev.2010 a Nov.2013</strong>
-                                    </h3>
-                                    <p>IFCE - Campus Fortaleza</p>
-                                </li>                                
-                            </ul>                    
-                        </section>
-
-                    </div>
-                </div>
-            </div>
-
-        </main>
-
-                <footer>
-                    <div class="container">
-                        <nav>
-                            <ul class="info-contato">
-                                <li>
-                                    <a href="mailto:davidteixeira.info@gmail.com"><strong>E-mail: </strong>davidteixeira.info@gmail.com</a>
-                                </li>
-                                <li>
-                                    <a href="tel:5585986666666"><strong>Telefone: </strong>(85) 9 8964-7993</a>
-                                </li>
-                                <li>
-                                    <a href="encurtador.com.br/gvxLY"><strong>Endereço: </strong>Rua Coelho Neto, 1000, apto 04, Álvaro Weyne, Fortaleza - Ceará</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <nav>
-                            <ul class="redes-sociais">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/davidteixeirademasin/">
-                                        <img src="./assets/images/linkedin.svg" alt="LinkedIN">
-                                        <p>LinkedIN</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/davidtmasin">
-                                        <img src="./assets/images/github-big-logo.svg" alt="GitHub">
-                                        <p>GitHub</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                    </div>
-                </footer>
-        </body>
+    </body>
 </html>

@@ -1,11 +1,12 @@
 /* VARIÁVEIS */
 :root{
+    --corBgPrincipal: #45dbfc;
+    --corBgSecundaria: #04133d;
+    --corBgDarkMode: #0e0e0e;
+    --corTextoPrimaria: #636363;
+    --corTextoSecundaria: #000;
+    --corBotaoDarkMode: #000;
     --LUZ: white;
-    --SEM-LUZ: black;
-    --COR-SUBTITULO: #636363;
-    --COR-DESCRICAO-PERFIL: #636363;
-    --PRIMARY-HEADER: #45dbfc;
-    --COR-RODAPE: #04133d;
     --FONT-STANDARD: 'Open Sans', sans-serif;
 }
 
@@ -37,7 +38,7 @@ body{
 
 /* HEADER */
 header {
-    background-color: var(--PRIMARY-HEADER);
+    background-color: var(--corBgPrincipal);
     padding: 30px 30px 0;
 }
 
@@ -68,12 +69,13 @@ header .coluna img{
 
 header .coluna h1{
     font-size: 1.5rem;
+    color: var(--corTextoSecundaria);
     
 }
 
 header .coluna p{
     font-size: 1rem;
-    color: var(--COR-SUBTITULO);
+    color: var(--corTextoPrimaria);
     
 }
 
@@ -88,13 +90,13 @@ header .coluna ul li{
 
 header .coluna ul li a{
     font-size: 1rem;
-    color: var(--SEM-LUZ);
+    color: var(--corTextoSecundaria);
 }
 
 
 /* FOOTER */
 footer{
-    background-color: var(--COR-RODAPE);
+    background-color: var(--corBgSecundaria);
 }
 
 footer .container{
@@ -117,7 +119,7 @@ footer nav .redes-sociais{
 }
 
 footer nav .redes-sociais li{
-    margin: 15px 30px;
+    margin: 15px 30px; 
     text-align: center;
     display: inline-block;
 }
@@ -125,11 +127,32 @@ footer nav .redes-sociais li{
 
 footer nav .redes-sociais li a img{
     width: 40px;
+    transition: .2s;
     
 }
 
+footer nav .redes-sociais li a:hover img{
+    transform: scale(1.2) translateY(-10px);
+}
+
+
 
 /* PÁGINA INICIAL */
+
+
+main .coluna section span{
+
+}
+
+main .coluna .topo-direita{
+
+
+}
+
+main .coluna .baixo-esquerda{
+
+}
+
 main .coluna{
     padding: 20px;
 }
@@ -138,6 +161,7 @@ main .coluna section{
     border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
     min-height: 187px;
+    color: var(--corTextoSecundaria);
 }
 
 main .coluna section h2{
@@ -147,7 +171,7 @@ main .coluna section h2{
 
 main .coluna section p{
     font-size: 0.9rem;
-    color: var(--COR-DESCRICAO-PERFIL);
+    color: var(--corTextoPrimaria);
     line-height: 1.5;
     text-align: justify;
     text-indent: 0.5em;
@@ -171,12 +195,114 @@ main .coluna section ul li strong{
     display: inline-block;
 }
 
+
 /* EXTRAS */
+.darkModeActive{
+    display: none;
+    
+   
+}
+
+header .container{
+    position: relative;
+}
+
+label{
+  
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height:30px;
+    background-color: var(--corBgSecundaria);
+    border-radius: 20px;
+    padding:  5px 5px;
+    box-sizing: border-box;
+    cursor:pointer;
+    user-select: none;
+    
+}
+
+label span{
+    width: 20px;
+    height:20px;
+    display: block;
+    background-color: #d4e9ff;
+    border-radius: 100%;
+    transition: all ease .3s;
+}
+
+.darkModeActive:checked ~ .dark-mode label{
+    background-color: #d4e9ff;
+
+}
+
+.darkModeActive:checked ~ .dark-mode label span{
+    background-color: var(--corBgSecundaria);
+    transform: translateX(21px);
+    transition: all ease .3s;
+}
+
+  
+
+
+/*O operador til ~ serve para selecionar o próximo elemento, o "irmão" */
+.darkModeActive:checked ~ .dark-mode{
+
+    --corBgPrincipal: #000;
+    --corBgSecundaria: #000;
+    --corTextoPrimaria: #FFF;
+    --corTextoSecundaria: #FFF;
+    --corBotaoDarkMode: #FFF;
+    
+}
+.darkModeActive:checked ~ .dark-mode > header > .container > label{
+
+    border-color: var(--corBotaoDarkMode);
+
+}
+
+.darkModeActive:checked ~ .dark-mode header{
+    background-color: var(--corBgSecundaria);
+
+}
+
+.darkModeActive:checked ~ .dark-mode header .container{
+    background-color: var(--corBgDarkMode);
+
+}
+.darkModeActive:checked ~ .dark-mode .container{
+    background-color: var(--corBgDarkMode);
+
+}
+
+.darkModeActive:checked ~ .dark-mode main{
+    background-color: var(--corBgSecundaria);
+}
+
+@keyframes aumentarLargura{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes aumentarAltura{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+
 
 
 /* @MEDIA */
 /* regras para DESKTOP até tela de tablet*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 530px){
     .linha{
         display: flex;
         flex-wrap: wrap;
@@ -209,9 +335,40 @@ main .coluna section ul li strong{
         text-align: left;
     }
     main .coluna section {
-        border: 1px solid #d4e9ff;
+        /* border: 1px solid #d4e9ff; */
+        border: 1px solid transparent;
         padding: 20px;
+        position: relative;
     } 
+
+    main .coluna section span{
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 2px solid transparent;
+    }
+
+    main .coluna section .topo-direita{
+        top: -2px;
+        left: -2px;
+        animation-name: aumentarLargura, aumentarAltura;
+        animation-duration: 1s, 1s;
+        animation-delay: 2s, 3s;
+        animation-fill-mode: forwards;
+        border-top-color: #d4e9ff;
+        border-right-color: #d4e9ff;
+    }
+    main .coluna section .baixo-esquerda{
+        bottom: -2px;
+        right: -2px;
+        animation-name: aumentarLargura, aumentarAltura;
+        animation-duration: 1s, 1s;
+        animation-delay: 4s, 5s;
+        animation-fill-mode: forwards;
+        border-bottom-color: #d4e9ff;
+        border-left-color: #d4e9ff;
+    }
 
     main .coluna{
         padding: 0;
